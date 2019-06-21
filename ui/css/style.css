@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(193, 197, 247);
+  color: white;
+  z-index: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #EB2D23;
+ z-index: 1;
+}
+
+nav img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+nav ul {
+  list-style-type: none;
+  float: right;
+  clear: both;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.main {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.bgImg {
+  text-align: center;
+}
+
+.bgImg img {
+  margin-top: 61px;
+  width: 98%;
+  height: 500px;
+}
+
+.bgImg span {
+  position: absolute;
+  top: 300px;
+  left: 280px;
+  color: #EB2D23;
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+
+.cards .flex-item img {
+  width: 317px;
+  height: 250px;
+}
+
+.cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-item {
+  width: 25%;
+  height: 310px;
+  border: 1px solid #fff;
+  margin: 10px;
+}
+
+.flex-item ul {
+  list-style-type: none;
+  margin-top: 2px;
+  padding-bottom: 10px;
+}
+
+.flex-item li {
+  display: block;
+  color: white;
+}
+
+#more {
+  margin-top: 10px;
+  background-color: #EB2D23;
+  padding: 5px;
+}
+
+footer {
+  margin-top: 80px;
+  margin-bottom:  0;
+  background-color: #EB2D23;
+  width: 100%;
+  height: 165px;
+  text-align: center;
+}
+
+footer ul {
+  list-style-type: none;
+}
+
+footer li {
+  display: block;
+}
+
+footer li a:hover {
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+
+.footeritem {
+  width: 30%;
+}
+
+.bold {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.about {
+  width: 40%;
+  height: 200px;
+  margin: 200px auto 0 auto;
+  padding: 20px;
+}
+
+.div-form {
+  width: 35%;
+  margin: 50px auto 0 auto;
+}
+
+.formcaption {
+  font-weight: bold;
+}
+
+.form table{
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #EB2D23;
+  padding: 5px;
+  margin-top: 15px;
+  width: 80px;
+  height: 40px;
+  border-radius: 12%;
+}
+
+.label {
+  float: left;
+}
+
+.input {
+  float: right;
+}
+
+.manusingpc img {
+  margin-top: 61px;
+  width: 98%;
+  height: 400px;
+}
+
+div > .greetuser {
+  margin: 60px 0 0 10px;
+  float: left;
+}
+
+.searchbox {
+  margin: 70px 10px 0 0;
+  float: right;
+}
+
+
+.userview {
+  clear: both;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.userview > .flex-item > img {
+  width: 100%;
+  height: 250px;
+}
+
+.flex-item li a:hover {
+  color: blue;
+  background-color: white;
+  width: 80px;
+  height: 60px;
+  border-radius: 12%;
+}
+
+.moreinfo {
+  display: flex;
+}
+
+.moreinfo-item > img {
+  width: 600px;
+  height: auto;
+}
+
+.moreinfo-item {
+  margin-top: 70px;
+  width: 50%;
+  height: auto;
+}
+
+.moreinfo-item > table {
+ margin: 0 auto;
+}
+
+.tdleft {
+ text-align: left;
+}
+
+.tdright {
+  text-align: right;
+}
+
+.heading > h4 {
+  margin-top: 120px;
+  color: green;
+}
+
+.accreated-form {
+  width: 35%;
+  margin: 100px auto 0 auto;
+}
+
+.agentform {
+  margin: 150px 0 0 10px;
+  width: 450px;
+  height: auto;
+}
+
