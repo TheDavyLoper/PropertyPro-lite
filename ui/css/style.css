@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  height: auto;
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(193, 197, 247);
   color: white;
@@ -13,7 +14,7 @@ nav {
   width: 100%;
   height: 60px;
   background-color: #EB2D23;
- z-index: 1;
+ z-index: 3;
 }
 
 nav img {
@@ -47,23 +48,31 @@ a {
 }
 
 .bgImg {
+  position: relative;
   text-align: center;
 }
 
 .bgImg img {
-  margin-top: 61px;
-  width: 98%;
+  width: 100%;
   height: 500px;
+  z-index: 1;
 }
 
-.bgImg span {
-  position: absolute;
-  top: 300px;
-  left: 280px;
-  color: #EB2D23;
+.bgImg h4 {
+  margin-top: 80px;
+  text-align: center;
+  color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: bolder;
+  z-index: 2;
+}
 
+.cards {
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .cards .flex-item img {
@@ -71,14 +80,8 @@ a {
   height: 250px;
 }
 
-.cards {
-  margin-top: 40px;
-  display: flex;
-  justify-content: space-around;
-}
-
 .flex-item {
-  width: 25%;
+  width: auto;
   height: 310px;
   border: 1px solid #fff;
   margin: 10px;
@@ -102,8 +105,8 @@ a {
 }
 
 footer {
-  margin-top: 80px;
-  margin-bottom:  0;
+  margin-top: 0;
+  margin-bottom: 0;
   background-color: #EB2D23;
   width: 100%;
   height: 165px;
@@ -138,16 +141,22 @@ footer li a:hover {
   margin-bottom: 3px;
 }
 
+.aboutimg img{
+  width: 100%;
+  height: 500px;
+}
+
 .about {
-  width: 40%;
-  height: 200px;
-  margin: 200px auto 0 auto;
+  width: 60%;
   padding: 20px;
+  text-align: left;
+  margin: 0 auto;
 }
 
 .div-form {
-  width: 35%;
-  margin: 50px auto 0 auto;
+  width: 45%;
+  height: 350px;
+  margin: 5px auto 0 auto;
 }
 
 .formcaption {
@@ -181,8 +190,8 @@ footer li a:hover {
   height: 400px;
 }
 
-div > .greetuser {
-  margin: 60px 0 0 10px;
+.greetuser > p{
+  margin: 70px 0 0 10px;
   float: left;
 }
 
@@ -190,7 +199,6 @@ div > .greetuser {
   margin: 70px 10px 0 0;
   float: right;
 }
-
 
 .userview {
   clear: both;
@@ -200,8 +208,12 @@ div > .greetuser {
   flex-wrap: wrap;
 }
 
+.userview > .flex-item {
+  width: auto;
+}
+
 .userview > .flex-item > img {
-  width: 100%;
+  width: 317px;
   height: 250px;
 }
 
@@ -218,7 +230,7 @@ div > .greetuser {
 }
 
 .moreinfo-item > img {
-  width: 600px;
+  width: 100%;
   height: auto;
 }
 
@@ -245,14 +257,47 @@ div > .greetuser {
   color: green;
 }
 
-.accreated-form {
-  width: 35%;
-  margin: 100px auto 0 auto;
+.greetagent > p{
+  margin-top: 10px ;
+  float: left;
 }
 
 .agentform {
-  margin: 150px 0 0 10px;
-  width: 450px;
-  height: auto;
+  margin: 300px 0 0 10px;
+  width: 25%;
+  height: 25%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  footer {
+    max-height: auto;
+  }
+
+  .footeritem {
+    width: 50%;
+  }
+
+  .bgImg h4 {
+    font-size: 20px;
+  }
+
+  .moreinfo {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .moreinfo-item {
+    margin-top: 70px;
+    width: 100%;
+    height: auto;
+  }
+
+  .div-form {
+    width: 45%;
+    height: 350px;
+    margin: 5px auto 30px auto;
+  }
 }
 
